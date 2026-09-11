@@ -1,9 +1,9 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "rewrites": [
+  "routes": [
     {
-      "source": "/:path*",
-      "destination": "https://sf-saved-spots.gigacatalyst-7592.chatgpt.site/:path*"
+      "src": "/(.*)",
+      "dest": "https://sf-saved-spots.gigacatalyst-7592.chatgpt.site/$1"
     }
   ]
 }
